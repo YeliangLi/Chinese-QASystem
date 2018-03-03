@@ -1,0 +1,5 @@
+__pycache__/
+data/
+model/
+logs/
+WebQA.v1.0/
