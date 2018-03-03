@@ -18,22 +18,17 @@ DataSet
 How to get start?
 -----
     1.Download the raw data and extract it to the folder where the source code is located.
-    2.python3 make_tfrecords.py
-      Processing the raw data to generate the tfrecord files for training and testing.
-    3.python3 train.py
-      Training model.
-    4.python3 plot.py
-      Draw the loss curve and the accuracy curve about training.
+    2.python3 make_tfrecords.pyProcessing the raw data to generate the tfrecord files for training and validating.In this experiment,I       used 200,000 corpus to train and validate the accuracy of the model on 5000 corpus.All the training results as shown below.It is not     hard to find that the model eventually achieved an accuracy of 0.6050 on the validation set.
+    3.python3 train.py.It will generate folder "logs"  to store log files,which tensorboard can be used to observe loss curve of training and the accuracy curve of the validation set.All models generated during training process are stored in the folder "model".<br>
 
-<br><br>
+![](https://github.com/YeliangLi/Chinese-QASystem/raw/master/picture/train_loss.png)<br> 
+![](https://github.com/YeliangLi/Chinese-QASystem/raw/master/picture/train_acc.png)<br>
+![](https://github.com/YeliangLi/Chinese-QASystem/raw/master/picture/valid_acc.png)<br>
+
 Note
 ----
-The code is still a development version. Because I only use about 20,000 corpus in the WebQA training set for training,so it still has not reached the high accuracy on the validation set.
-In the future, I will increase the amount of training data to provide a more complete version.I will write a blog to introduce this work and you will learn how to use tensorflow's tf.while_loop 
-interface to implement conditional random field training and Viterbi decoding.<br><br>
-![](https://github.com/YeliangLi/Chinese-QASystem/raw/dev/picture/train_loss.png)<br> 
-![](https://github.com/YeliangLi/Chinese-QASystem/raw/dev/picture/train_acc.png)<br>
-![](https://github.com/YeliangLi/Chinese-QASystem/raw/dev/picture/valid_acc.png)<br><br>
+In the future, I will write a blog to introduce this work and you will learn how to use tensorflow's tf.while_loop interface to implement conditional random field training and Viterbi decoding.<br><br>
+
 
 References
 -----
