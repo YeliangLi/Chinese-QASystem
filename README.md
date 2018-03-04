@@ -17,9 +17,11 @@ DataSet
 
 How to get start?
 -----
-    1.Download the raw data and extract it to the folder where the source code is located.
-    2.python3 make_tfrecords.pyProcessing the raw data to generate the tfrecord files for training and validating.In this experiment,I       used 200,000 corpus to train and validate the accuracy of the model on 5000 corpus.All the training results as shown below.It is not     hard to find that the model eventually achieved an accuracy of 0.6050 on the validation set.
-    3.python3 train.py.It will generate folder "logs"  to store log files,which tensorboard can be used to observe loss curve of training and the accuracy curve of the validation set.All models generated during training process are stored in the folder "model".<br>
+        1.Download the raw data and extract it to the folder where the source code is located.
+        2.python3 make_tfrecords.py.Processing the raw data to generate the tfrecord files for training and validating.
+          In this experiment,I used 200,000 corpus to train and validate the accuracy of the model on 5000 corpus.
+        3.python3 train.py.All the training results as shown below.It is not hard to find that the model eventually 
+          achieved an accuracy of 0.6050 on the validation set.
 
 ![](https://github.com/YeliangLi/Chinese-QASystem/raw/master/picture/train_loss.png)<br> 
 ![](https://github.com/YeliangLi/Chinese-QASystem/raw/master/picture/train_acc.png)<br>
